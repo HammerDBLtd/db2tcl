@@ -12,8 +12,8 @@
 #include <tcl.h>
 #include <sqlcli.h>
 
-#define MAX_UID_LENGTH 18
-#define MAX_PWD_LENGTH 30
+#define MAX_UID_LENGTH 255
+#define MAX_PWD_LENGTH 255
 #define MAX_STMT_LEN   255
 #define MAX_COLUMNS    255
 #define MAX_ID_LENGTH  255
