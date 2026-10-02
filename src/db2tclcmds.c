@@ -374,8 +374,9 @@ int Db2_force_off (ClientData cData, Tcl_Interp * interp, int argc, const char *
     }
 
     /*
-     * Keep the Tcl command available when using client libraries that do not
-     * provide sqlefrce_api. Connections must be closed before db2_drop_db.
+     * The IBM Data Server Driver does not provide sqlefrce_api. Keep the Tcl
+     * command available as a no-op. Connections must be closed before
+     * db2_drop_db is called.
      */
     return TCL_OK;
 }
